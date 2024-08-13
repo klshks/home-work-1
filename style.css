@@ -7,24 +7,25 @@ body {
 
 /* Стилі для навігаційного блоку */
 nav {
-  position: relative; /* Встановлює відносне позиціонування, щоб можна було позиціонувати дочірні елементи */
+  display: flex;
+  justify-content: center;
   width: 100%; /* Ширина навігаційного блоку займає 100% ширини сторінки */
 }
 
-header {
-  background-image: url(img/bg.jpg);
+.header {
+  background-color: #1f2235;
   min-height: 900px;
   min-width: 1920px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-span {
+.title-highlight {
   color: #fe461c;
 }
 
 /* Стилі для списку навігаційних посилань */
-.nav-links {
+.nav__links {
   display: flex; /* Встановлює флекс-контейнер для горизонтального вирівнювання посилань */
   list-style: none; /* Видаляє маркери списку */
   padding: 0; /* Видаляє внутрішні відступи у списку */
@@ -35,12 +36,12 @@ span {
 }
 
 /* Стилі для кожного елемента списку в навігаційному меню */
-.nav-links li {
+.nav__links li {
   margin-right: 20px; /* Додає відступ праворуч для кожного елемента, щоб створити простір між посиланнями */
 }
 
 /* Стилі для посилань у навігаційному меню */
-.nav-links a {
+.nav__links a {
   text-decoration: none; /* Видаляє підкреслення у посилань */
   color: #ffffff; /* Встановлює чорний колір тексту посилань за замовчуванням */
   font-weight: 700; /* Встановлює жирний шрифт */
@@ -50,12 +51,12 @@ span {
 }
 
 /* Стилі для посилань при наведенні курсору */
-.nav-links a:hover {
+.nav__links a:hover {
   color: #e8401a; /* Змінює колір тексту на #e8401a при наведенні курсору */
 }
 
 /* Стилі для кнопки "Download CV" */
-.download-cv {
+.download__cv {
   display: inline-block; /* Встановлює кнопці блочний елемент з інлайн-властивостями */
   width: 152px; /* Встановлює ширину кнопки 152 пікселя */
   height: 50px; /* Встановлює висоту кнопки 50 пікселів */
@@ -73,10 +74,13 @@ span {
 }
 
 /* Стилі для кнопки при наведенні курсору */
-.download-cv:hover {
+.download__cv:hover {
   opacity: 1; /* Робить кнопку видимою при наведенні курсору */
 }
-.social-links {
+.info-block {
+  margin: 0 auto;
+}
+.social__links {
   position: absolute; /* Дозволяє елементу бути розміщеним відносно найближчого батьківського елемента з відносним позиціонуванням (в даному випадку header) */
   top: 410px; /* Відступ 410px від верхньої частини шапки */
   left: 47px; /* Відступ 47px від лівого краю шапки */
@@ -87,7 +91,7 @@ span {
 }
 
 /* Стилі для зображень соціальних мереж */
-.social-links img {
+.social__links img {
   width: 50px; /* Ширина кожного зображення (іконки) встановлена на 50px */
   height: 50px; /* Висота кожного зображення (іконки) встановлена на 50px */
   border-radius: 4px 0px 0px 0px; /* Скруглює верхній лівий кут зображення (4px) */
@@ -97,12 +101,12 @@ span {
 }
 
 /* Лівий блок */
-.left-div {
+.left__div {
   position: relative; /* Відносне позиціонування для зручності розташування дочірніх елементів */
 }
 
 /* Еліпс */
-.ellipse {
+.ellipse__left {
   width: 204px; /* Ширина еліпса */
   height: 204px; /* Висота еліпса */
   position: absolute; /* Абсолютне позиціонування для точного розташування */
@@ -112,7 +116,7 @@ span {
   border-radius: 50%; /* Робить елемент круглим (еліпсом) */
   opacity: 1; /* Прозорість еліпса, 1 означає повну видимість */
 }
-.welcome-text {
+.welcome__text {
   width: 218px; /* Ширина блоку з текстом */
   height: 16px; /* Висота блоку з текстом */
   position: absolute; /* Абсолютне позиціонування */
@@ -126,7 +130,7 @@ span {
   text-align: left; /* Вирівнювання тексту по лівому краю */
   color: #ffffff;
 }
-.intro-text {
+.intro__text {
   width: 654px; /* Ширина блоку з текстом */
   height: 131px; /* Висота блоку з текстом */
   position: absolute; /* Абсолютне позиціонування */
@@ -141,7 +145,7 @@ span {
 }
 
 /* Описовий текст */
-.description-text {
+.description__text {
   width: 521px; /* Ширина блоку з текстом */
   height: 60px; /* Висота блоку з текстом */
   position: absolute; /* Абсолютне позиціонування */
@@ -154,9 +158,9 @@ span {
   text-align: left; /* Вирівнювання тексту по лівому краю */
   color: #ffffff;
 }
-.hire-me {
+.hire__me {
   display: inline-block; /* Встановлює кнопці блочний елемент з інлайн-властивостями */
-  width: 160px; /* Встановлює ширину кнопки 152 пікселя */
+  width: 152px; /* Встановлює ширину кнопки 152 пікселя */
   height: 50px; /* Встановлює висоту кнопки 50 пікселів */
   background-color: #e8401a; /* Встановлює червоний колір фону кнопки */
   color: white; /* Встановлює білий колір тексту кнопки */
@@ -170,9 +174,9 @@ span {
   font-weight: 700; /* Встановлює жирний шрифт */
   transition: opacity 0.3s; /* Додає анімацію зміни прозорості протягом 0.3 секунд */
 }
-.download-cv-2 {
+.download__cv-bottom {
   display: inline-block; /* Встановлює кнопці блочний елемент з інлайн-властивостями */
-  width: 160px; /* Встановлює ширину кнопки 152 пікселя */
+  width: 152px; /* Встановлює ширину кнопки 152 пікселя */
   height: 50px; /* Встановлює висоту кнопки 50 пікселів */
   text-align: center; /* Вирівнює текст по центру кнопки */
   line-height: 50px; /* Встановлює міжрядковий інтервал, щоб текст був по центру вертикально */
@@ -186,7 +190,7 @@ span {
   color: white; /* Встановлює білий колір тексту кнопки */
   border: 2px solid rgba(255, 255, 255, 1)
 }
-.ellipse-right {
+.ellipse__right {
   width: 634px; /* Ширина еліпса */
   height: 634px; /* Висота еліпса */
   position: absolute; /* Абсолютне позиціонування для точного розташування */
@@ -196,28 +200,28 @@ span {
   border-radius: 50%; /* Робить елемент круглим (еліпсом) */
   opacity: 1; /* Прозорість еліпса, 1 означає повну видимість */
 }
-.img-figma {
+.img__figma {
   position: absolute;
   width: 80px;
   height: 80px;
   top: 268px;
   left: 975px;
 }
-.img-ps {
+.img__ps {
   position: absolute;
   width: 80px;
   height: 80px;
   top: 268px;
   left: 1638px;
 }
-.img-sketch {
+.img__sketch {
   position: absolute;
   width: 80px;
   height: 80px;
   top: 653px;
   left: 1638px;
 }
-.img-xd {
+.img__xd {
   position: absolute;
   width: 80px;
   height: 80px;
