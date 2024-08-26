@@ -349,6 +349,7 @@ nav {
   height: 36px;
   width: 115px;
   letter-spacing: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .section-portfolio__title {
   color: #ffffff;
@@ -415,20 +416,20 @@ nav {
   font-size: 16px;
   margin-bottom: 18px;
 }
-.section-whyChooseUs {
+.section-why-us {
   display: flex;
   flex-direction: column;
   height: 620px;
   background-color: #24273b;
 }
-.section-whyChooseUs__header {
+.section-why-us__header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 70px;
 }
-.section-whyChooseUs__link {
+.section-why-us__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,27 +442,27 @@ nav {
   letter-spacing: 2px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.section-whyChooseUs__title {
+.section-why-us__title {
   color: #ffffff;
   font-size: 36px;
   letter-spacing: 1px;
   margin-top: 15px;
 }
-.section-whyChooseUs__cards {
+.section-why-us__cards {
   display: flex;
   justify-content: center;
   max-width: 1320px;
   margin: 0 auto;
   margin-top: 25px;
 }
-.section-whyChooseUs__card {
+.section-why-us__card {
   margin-right: 25px;
   width: 307px;
   height: 360px;
   background-color: #1f2235;
   border-radius: 8px;
 }
-.section-whyChooseUs__content {
+.section-why-us__content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -469,19 +470,19 @@ nav {
   height: 278px;
   margin: 30px;
 }
-.section-whyChooseUs__icon {
+.section-why-us__icon {
   height: 50px;
   width: 50px;
 }
-.section-whyChooseUs__text {
+.section-why-us__text {
   color: #ffffff;
   font-size: 20px;
 }
-.section-whyChooseUs__element {
+.section-why-us__element {
   font-size: 14px;
   letter-spacing: 1px;
 }
-.section-whyChooseUs__button {
+.section-why-us__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,6 +496,6 @@ nav {
   transition: background-color 0.3s;
   margin-top: 20px;
 }
-.section-whyChooseUs__button:hover {
+.section-why-us__button:hover {
   background-color: #e8401a;
 }
