@@ -499,3 +499,139 @@ nav {
 .section-why-us__button:hover {
   background-color: #e8401a;
 }
+.section-resume {
+  height: 806px;
+  background-color: #1f2235;
+}
+.section-resume__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  height: 550px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.section-resume__left {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+}
+.section-resume__header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 300px;
+  height: 96px;
+}
+.section-resume__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  width: 97px;
+  height: 36px;
+  background-color: #24273b;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  transition: background-color 0.3s;
+}
+.section-resume__button:hover {
+  background-color: #e8401a;
+}
+.section-resume__title {
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+.section-resume__tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 364px;
+  height: 36px;
+}
+.section-resume__tab {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #24273b;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.section-resume__tab:hover {
+  background-color: #e8401a;
+}
+.section-resume__tab__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 36px;
+
+}
+.section-resume__tab__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+  height: 36px;
+}
+.section-resume__tab__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  height: 36px;
+}
+.section-resume__skills {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 606px;
+  height: 345px;
+}
+.section-resume__skill {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 54px;
+}
+.section-resume__skill__header {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 20px;
+}
+.section-resume__progress {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd; 
+  border-radius: 10px;
+}
+
+.section-resume__progress-bar {
+  height: 100%;
+  background-color: #e8401a; 
+  border-radius: 10px; 
+}
+
+.section-resume__bar-90 {
+  width: 90%; 
+}
+.section-resume__bar-80 {
+  width: 80%; 
+}
+.section-resume__bar-70 {
+  width: 70%; 
+}
+.section-resume__bar-60 {
+  width: 60%; 
+}
+.section-resume__right {
+  display: flex;
+  align-items: end;
+}
+.section-resume__image {
+  display: flex;
+  width: 572.01px;
+  height: 504.17px;
+}
