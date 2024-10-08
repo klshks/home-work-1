@@ -740,8 +740,6 @@ nav {
 }
 .section-testimonials__icons {
   display: flex;
-  justify-content: space-between;
   max-width: 1320px;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
