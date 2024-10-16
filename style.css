@@ -1431,29 +1431,125 @@ height: 40px;
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     background: yellow;
   }
-
+  .navbar {
+    margin-left: 0px; 
   }
+  .banner-logo {
+    margin-top: 100px;
+  }
+  .banner-section {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .section-container {
+    height: 1200px;
+  }
+  .section-portfolio__bottom, .section-portfolio__top {
+    width: 230px;
+  }
+  .section-portfolio__bottom {
+    height: 340px;
+  }
+  .section-portfolio__header {
+    margin-top: 100px;
+  }
+  .section-portfolio {
+    height: 970px;
+  }
+  .section-why-us__card:last-child {
+    display: none;
+  }
+  .section-why-us__cards {
+    flex-direction: column;
+  }
+  .section-why-us__card {
+    margin-bottom: 20px;
+  }
+  .section-why-us {
+    height: 1400px;
+  }
+  .section-resume__left {
+    margin: 0 auto;
+  }
+  .section-resume__image {
+    display: none;
+  }
+  .section-testimonials {
+    height: 1350px;
+  }
+  .section-testimonials__cards {
+    flex-direction: column;
+  }
+  .section-testimonials__card {
+    margin-bottom: 130px;
+  }
+  .section-blogpost__header {
+    margin-top: 50px;
+  }
+  .section-blogpost__posts {
+    flex-direction: column;
+  }
+  .section-blogpost {
+    height: 1750px;
+  }
+  .section-blogpost__post {
+    margin-bottom: 50px;
+  }
+  .section-subscribe__container {
+    width: 700px;
+    flex-direction: column;
+  }
+  .section-contact__container {
+    align-items: center;
+    width: 0;
+    flex-direction: column;
+    height: 875px;
+  }
+  .section-contact__maps {
+    width: 750px;
+  }
+  .section-contact {
+    height: 1900px;
+  }
+  .section-contact__data {
+    margin-bottom: 50px;
+  }
+  .footer {
+    height: 40px;
+  }
+  .footer-content {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .footer-content__text {
+    width: 320px;
+    font-size: 10px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     body {
       background: white;
