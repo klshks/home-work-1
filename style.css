@@ -1533,29 +1533,93 @@ height: 40px;
   }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     body {
       background: white;
     }
+    .navbar {
+      margin-left: 250px;
     }
-@media screen and (min-width: 1441px) and (max-width: 1960px) {
+    .banner__content {
+      width: 430px;
+    }
+    .banner-logo {
+      width: 400px;
+    }
+    .image__container, .image-container {
+      width: 400px;
+      height: 400px;
+    }
+    .text-container {
+      max-width: 550px;
+    }
+    .section-portfolio__top, .section-portfolio__bottom {
+      width: 320px;
+    }
+    .section-portfolio__bottom {
+      height: 440px;
+    }
+    .section-why-us__card:last-child {
+      display: none;
+    }
+    .section-resume__content {
+      justify-content: space-around;
+    }
+    .section-resume__image {
+      width: 370px;
+      height: 300px;
+    }
+    .section-resume__skills {
+      width: 506px;
+    }
+    .section-testimonials__card:last-child {
+      display: none;
+    }
+    .section-blogpost__post:last-child {
+      display: none;
+    }
+    .section-subscribe__container {
+      flex-direction: column;
+    }
+    .section-subscribe__container {
+      width: 900px;
+    }
+    .section-contact__container {
+      align-items: center;
+      width: 0;
+      flex-direction: column;
+      height: 875px;
+    }
+    .section-contact__maps {
+      width: 900px;
+    }
+    .section-contact {
+      height: 1900px;
+    }
+    .section-contact__data {
+      margin-bottom: 50px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 1441px) and (max-width: 1960px) {
       body {
         background: dark;
       }
